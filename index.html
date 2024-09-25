@@ -27,30 +27,30 @@
   </script>
 </head>
 
-<body>
+<body  >
   <!-- Navbar section start -->
   <nav>
-    <div class="navbar bg-nav-color px-5 py-10">
+    <div class="navbar bg-nav-color px-5 py-10 ">
       <div class="navbar-start">
 
-        <a class="btn btn-ghost text-xl font-extrabold bg-btn-color">Blog</a>
+        <a href="blog.html" class="btn btn-ghost text-xl font-extrabold bg-btn-color sm:text-sm font-bold">Blog</a>
       </div>
-      <div class="navbar-center gap-3  text-xl font-extrabold lg:flex">
+      <div class="navbar-center gap-3  text-xl font-extrabold flex sm: text-sm font-bold gap-0">
         <img src="assets/logo.png" alt="">
         <p> Donate Bangladesh</p>
       </div>
       <div class="navbar-end ">
-        <p class="btn text-xl "><img src="assets/coin.png" alt="">
+        <p class="btn text-xl sm: text-sm "><img src="assets/coin.png" alt="">
           <span id="balance">5500</span>BDT
         </p>
 
-        <!-- <a class="btn text-xl ">  <img src="assets/coin.png" alt="">5500 BDT</a> -->
+       
       </div>
     </div>
     <section>
       <div class="hero bg-base-200 flex justify-center">
-        <button class="btn bg-btn-color text-xl font-bold">Donation</button>
-        <button class="btn bg-btn-color text-xl font-bold">History</button>
+        <button id="donation-button" class="btn bg-btn-color text-xl font-bold">Donation</button>
+        <button id="history-button" class="btn  text-xl font-bold">History</button>
       </div>
     </section>
   </nav>
@@ -60,7 +60,7 @@
   <!-- Donation Collect Section Start -->
   <main>
 
-    <section>
+    <section id="donation-section">
       <!-- Donate for Flood at Noakhali Start -->
 
       <div>
@@ -70,7 +70,7 @@
             <div class="space-y-3">
               <p class="btn text-xl "><img src="assets/coin.png" alt=""> <span id="noakhali-donation">0</span> BDT</p>
 
-              <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+              <h1 id="noakhali-headline" class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
               <p class="py-3 color-description-color">
                 The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
                 help provide essential supplies and to those affected by this disaster. Every contribution, big or
@@ -97,7 +97,7 @@
             <div class="space-y-3">
               <p class="btn text-xl "><img src="assets/coin.png" alt=""><span id="feni-donation">600</span> BDT</p>
 
-              <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+              <h1 id="feni-headline" class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
               <p class="py-3 color-description-color">
                 The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your
                 generous donation will help provide immediate aid, including food, clean water, and medical supplies, to
@@ -123,7 +123,7 @@
             <div class="space-y-3">
               <p class="btn text-xl "><img src="assets/coin.png" alt=""><span id="injured-donation">2400</span> BDT</p>
 
-              <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+              <h1 id="injured-headline" class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
               <p class="py-3 color-description-color">
                 The recent Quota movement has resulted in numerous injuries and significant hardship for many
                 individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary
@@ -142,10 +142,21 @@
       </div>
       <!-- Aid for Injured in the Quota Movement End -->
     </section>
+    <section id="history-section">
+      
+      <div id="history-section-list" class="space-y-3">
+
+        
+      </div>
+
+       </section>
 
   </main>
   <!-- Donation Collect Section end -->
+   <script src="Js/history.js"></script>
   <script src="Js/common-function.js"></script>
+  <script src="Js/features.js"></script>
+  
   <script src="Js/index.js"></script>
 </body>
 
