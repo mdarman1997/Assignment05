@@ -29,18 +29,19 @@
 
 <body  >
   <!-- Navbar section start -->
-  <nav>
-    <div class="navbar bg-nav-color px-5 py-10 ">
+  <nav class="relative">
+    <div class="fixed top-0 left-0 right-0 z-10">
+    <div class="navbar bg-nav-color px-5 py-10">
       <div class="navbar-start">
 
-        <a href="blog.html" class="btn btn-ghost text-xl font-extrabold bg-btn-color sm:text-sm font-bold">Blog</a>
+        <a href="blog.html" class="btn btn-ghost text-xl font-extrabold bg-btn-color sm:text-sm sm:font-bold">Blog</a>
       </div>
-      <div class="navbar-center gap-3  text-xl font-extrabold flex sm: text-sm font-bold gap-0">
+      <div class="navbar-center gap-3  text-xl font-extrabold flex sm:text-sm sm:font-bold sm:gap-0">
         <img src="assets/logo.png" alt="">
         <p> Donate Bangladesh</p>
       </div>
       <div class="navbar-end ">
-        <p class="btn text-xl sm: text-sm "><img src="assets/coin.png" alt="">
+        <p class="btn text-xl sm:text-sm "><img src="assets/coin.png" alt="">
           <span id="balance">5500</span>BDT
         </p>
 
@@ -53,12 +54,14 @@
         <button id="history-button" class="btn  text-xl font-bold">History</button>
       </div>
     </section>
+  </div>
   </nav>
+
   <!-- Navbar section End -->
 
 
   <!-- Donation Collect Section Start -->
-  <main>
+  <main class="mt-[250px]">
 
     <section id="donation-section">
       <!-- Donate for Flood at Noakhali Start -->
@@ -140,6 +143,24 @@
           </div>
         </div>
       </div>
+      <!-- Modal call section start -->
+      <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box flex flex-col  justify-center items-center">
+    <h3 class="text-2xl font-extrabold">Congratulations!</h3>
+    <img src="assets/coin.png" alt="">
+    <p class="py-4 text-xl">You have donated for humankind</p>
+    <h3 class="text-xl font-extrabold">Successfully</h3>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+<!-- Modal call section end -->
       <!-- Aid for Injured in the Quota Movement End -->
     </section>
     <section id="history-section">

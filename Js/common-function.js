@@ -31,6 +31,9 @@ function balanceSheet(DonationAmount,ownBalance,donatedBalance,id,headline){
     }
     const newDonatedBalance=donatedBalance + DonationAmount;
     const newOwnBalance=ownBalance - DonationAmount;
+//    Modal call 
+    const modal=document.getElementById('my_modal_1');
+    modal.showModal();
 
     document.getElementById('balance').innerText=newOwnBalance;
     document.getElementById(id).innerText=newDonatedBalance;
